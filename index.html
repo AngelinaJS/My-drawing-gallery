@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru"> <! attribute of russian language>
+    <head>
+        <meta charset="tf8"> <!--tag 'meta' writes type of page coding-->
+        <title> AngelHaze </title>
+        
+        <!--отображать в масштабе 100%-->
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        
+        <!--для древних эксплореров-->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+       
+        <!--нормализация стиля во всех браузерах. ЭТО должно быть выше всех остальных стилей--> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       
+        <!--подключение собственных стилей-->
+        <link rel="stylesheet" href="css/main.css">
+    
+        
+        <!--web-fonts from FONTSgoogle +BOOTSTRAP. Если работает. Исчезнут все отступы слева-->
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        
+        
+        <!--shortcut icon= favicon-->
+        <link rel="shortcut icon" type="image/ x-icon" href="pic/Favicon16/1.png"> 
+        
+         <script src="https://kit.fontawesome.com/37ac5c1b60.js"></script>  <!--link to JS что бы сделать галочку в header_arrow-->
+    </head>
+    <body>
+        <!--................................................................
+
+        HEADER
+            
+        .........................................................-->
+        <div class="header">
+            <div class="header_title">Элина Кувшинчикова</div> <!-- Делает прямоуголный блок-->
+            <div class="header_slogan"> Верстка сайтов в HTML и CSS, <br> HTML5, CSS, JS, JQuery </div>
+            <div class="header_arrow"><i class="fa fa-chevron-down"></i> </div>
+        </div>
+        
+
+        <!--................................................................
+
+        PORTFOLIO
+            
+        .........................................................-->
+        <div class='portfolio'>
+            <div class="title">
+                Портфолио
+            </div>
+            <div class="row"> <!--РЯД.объединяет 3 блока один под другим-->
+            <div class="container">
+                
+             <!--Работа в портфолио-->
+                <div class="col4"> <!--3 колонки col внутри каждой:изображение, заголовок, описание-->
+                    <div class="image">
+                        <!--тупо обернула в лишний тег, чтоб бысли отступы, если будет 2-3 ряд работ.Закрывающий див рандом внизу блока-->
+                    <div class="image">
+                    <img src="pic/WORKS/cc.jpg" alt="Сакура">
+                        </div>
+                    <div class="title">
+                        <a href="sak.html">Сакура</a>
+                    </div>
+                    <div class="text">
+                        <p>Холст и масло.</p>
+                    </div>             
+                </div> <!--//Рандомный, закрывающий див-->
+                    </div> 
+                 <!--//Работа в портфолио-->
+                
+                 <!--Работа в портфолио. СКОПИРОВАЛА ПРЕДЫДУЩИЙ БЛОК-->
+                <div class="col4"> 
+                    <div class="image">
+                    <div class="image">
+                    <img src="pic/WORKS/gg.jpg" alt="Горы">
+                    </div>
+                    <div class="title">
+                        <a href="mountins.html">Горы</a>
+                    </div>
+                    <div class="text">
+                        <p>Много свободного времени, картон, масло.</p>
+                    </div>             
+                </div>
+                    </div>
+                 <!--//Работа в портфолио-->
+                
+                 <!--Работа в портфолио-->
+                <div class="col4"> 
+                    <div class="image">
+                    <div class="image">
+                    <img src="pic/WORKS/%D0%B1.jpg" alt="Бабочки">
+                    </div>
+                    <div class="title">
+                        <a href="butterfly.html">Бабочки</a>
+                    </div>
+                    <div class="text">
+                        <p>Моя очень старая акварель в смешанной технике. Лайнер.</p>
+                    </div>             
+                </div>
+                 </div>
+                 <!--//Работа в портфолио-->
+          </div>
+         </div>
+       </div>
+        
+        <!--................................................................
+
+        FOOTER
+            
+        .........................................................-->
+        <div class='footer'> <!--контейнер- чтоб центрировать. Роу=ряд, чтоб 3 колонки не выходили за футер. кол4 оставила как в портфолио-->
+        <div class="container">
+            <div class="row">
+                
+                <div class="col4">
+                    <p class="f_name">©2020 Элина Кувшинчикова</p>
+                    <p> HTML и JS верстка и разработка сайтов</p>
+                </div>
+            
+                <div class="col4">
+                    <p class="footer_social">Мои профили в социальных сетях:</p>
+                    <p class="footer_social_icons">
+                        <a href="#" target="_blank"> <i class="fa fa-vk"></i></a>
+                        <a href="https://www.instagram.com/_angelhaze_/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/tes.sla.14/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-telegram"></i></a>
+                       
+                        
+                    </p>
+                
+                </div>
+                
+                <div class="col4">
+                   <div>
+                       <a href="https://vk.com/angelhaze8" class="button" target="_blank"> 
+                         связаться VK 
+                       </a> <!--таргет бланк. чтобы ссылка в новой вкладке открывалась-->
+                    </div> 
+                   <p>Напишите мне, чтобы заказать или узнать <br> стоимость верстки вашего проекта.</p> 
+                </div>
+            </div>
+            </div>
+        
+        
+        </div>
+      
+    
+    
+    
+    </body>
+</html>
