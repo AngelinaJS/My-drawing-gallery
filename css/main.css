@@ -1,0 +1,278 @@
+html, body {
+background-color: #c5c6c7;
+font-family:'Open Sans Condensed', sans-serif; 
+font-size: 16px;
+line-height: 1.5; /*базовая высота строки*/
+min-width:280 px; /*при ширине экрана ниже этого значения все же появится горизонт. полоса прокрутки*/
+} 
+/*
+Names of FONTS 
+1 font-family: 'Chelsea Market', cursive;
+2 font-family: 'Open Sans Condensed', sans-serif;
+скачивать шрифты не надо!
+*/
+.a{ transition: 0.2s, ease-out;}/*плавная смена цвета у ссылок*/
+.img {display: inline-block;} /*именно имд!- эта штука убирает отступы под рисунками, по умолчанию*/
+
+*{ box-sizing: border-box;} /* *-это универсальный селектор*/
+
+
+/*-----------------------------------------GRID- сетка для портфолио------------------------------------------*/
+
+.container{
+    width: 1140px; /*content bigger then 1140 px will be centrinf ( in center)*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after {clear: both; /*очистка обтекания слева и справа*/
+    content:""; /*нужно для псевдоэлемента писать, а то не отобразится*/
+    display: table /* to correct display in old and new browsers*/}
+
+.col4{  width:360px; /*width of columns watch in PH*/
+        margin-right:30px;
+        float: left;/*колонки будут обтекать доруг друга слева*/} 
+.col4:last-child {margin-right:0px;}/*псевдокласс, последний блок с бабочками отправит наверх*/
+
+
+/*-------------------------------------------HEADER--------------------------------------------------------------------*/
+
+.header
+{   background: #343c4e;
+    background-image: url("../pic/Font-Head/%E2%80%94Pngtree%E2%80%94brush%20abstract%20background_374888.png"); /*(../) значит подняться из папки на уровень вверх*/
+    background-repeat:no-repeat; /*не повторять на больших экранах*/
+    background-position: center; /*заполнить все рисунком*/
+    background-size: cover;
+    height: 100vh; /*100vh=1 высота окна браузера*/
+    min-height: 400 px;
+    
+    color:black;
+    text-align: center;
+    
+    display: flex; /*флекс бокс*/
+    flex-direction: column; /*в столбец*/
+    align-items: center; /*выровнять внутри бокса*/
+    justify-content: center;
+    position: relative; /*что значит, что он родительский к Хедер, слоган и Эрроу*/
+}    /* refer to class*/
+
+.header_title{
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 30px;/*отступ снизу*/
+    font-family: 'Chelsea Market', cursive;
+    margin-top: -50px; /*отступ сверху вниз*/
+    
+}
+ 
+.header_slogan{
+    font-size: 28px;
+    line-height: 42 ps;
+    
+}
+.header_arrow{
+    font-size: 48px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    
+    width: 60px;
+    height: 50px;
+    margin-left: -30px;} /*двинула влево на половину ширины, чтоб было по центру*/
+
+
+/*-----------------------------------------PORTFOLIO-------------------------------------------
+container, titcle,col4 ll be repeated*/
+
+.portfolio{
+    padding-top:70px;   /*padding is INNER indent/внутренний отступ!*/
+    padding-bottom: 100px;}
+
+
+.title{
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    font-family:'Chelsea Market', cursive;
+    text-align: center;
+}
+    
+.image{margin-bottom: 20px;}
+
+.image img{
+    max-width: 100%;
+    height: auto;} /*селектор, который выберет изображения и форматит их для смартфона*/
+
+.title{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px, solid, black;
+} /*стилизую ссылки*/
+
+.title a:hover{
+    color: brown;
+    border-bottom-color: brown;
+}/*псевдокласс:вид ссылки при наведении*/
+    
+.text p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+/* Не обязательно, тк в штмл по умолчанию воткнут этот стиль
+    .text{
+    font-size: 16px;
+    line-height: 1.5;}*/
+
+
+
+/*-----------------------------------------SAK-------------------------------------------*/
+
+.single_page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.single_page img {
+    margin-bottom: 50px;
+    max-width: 100%;/* уменьшить картинку на смартфоне без полосы горизонтальной прокрутки*/
+    height: auto;
+     /*чтоб кнопка перенеслась на след строчку а не стояла рядом с картинкой*/
+}
+
+.button-back{
+    font-weight: 700; /*bold*/
+    text-decoration: none;
+    color: brown;
+    letter-spacing: 1.3px;
+    
+    border-color: brown;
+    border-style:double;
+    border-radius: 50px;/*default.usually*/
+    
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    
+    margin-bottom: 13px;
+    a
+    }
+
+.button-back:hover{
+    color: brown;
+    background-color: white;
+    }
+
+
+
+
+/*-----------------------------------------FOOTER-------------------------------------------*/
+
+.footer{
+    background-color: brown;
+    color: #D6645C;
+    padding-top: 90px;
+    padding-bottom: 190px;}
+
+.footer p{
+    margin-top: 0px;
+    margin-bottom: 15px;}
+p.f_name{
+    font-size: 28px;
+    margin-bottom: 10 px;
+    line-height: normal;
+    font-family: 'Chelsea Market', cursive;
+}/*p.f_name означает, что в-нейм лежит внутри тега П*/
+
+p.footer_social_icons{ 
+color: #FFF;
+font-size: 32px;}
+
+p.footer_social_icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 25px;/*отступы иконок друг от друга*/}
+
+p.footer_social_icons a:last-child {margin-right: 0px;}/*у последней иконки убрала лишний отступ*/
+
+p.footer_social_icons a:hover{
+    color: crimson;
+    transition: 0.2s, ease-out;
+}/*псевдокласс:вид ссылки при наведении*/
+
+.button{
+    font-weight: 700; /*bold*/
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; /*UPPERCASEEE*/
+    letter-spacing: 1.3px;
+    
+    display: inline-block; /* для того, чтоб придать свойство блочного элемента кнопке, но ширина адаптировалась под контента*/
+    border-color: #FFF;
+    border-style:double;
+    border-radius: 50px;/*default.usually*/
+    
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    
+    margin-bottom: 13px;
+    }
+
+.button:hover{
+    color: brown;
+    background-color: white;
+    }
+
+/*-----------------------------------------MEDIA DISPLAY-------------------------------------------*/
+
+@media(max-width:1160px)/* медиа-запрос при ширине экрана 1160 и МЕНЕЕ будут  выполнены другие условия*/
+{
+    .container{         /* РЕЗИНОВЫЙ КОНТЕЙНЕР*/
+        width: 100%;    /* Реальная ширина= width: 100%+ бордер(если есть, у нас=0)+ внутр отступы (паддинги 15+15 пикс. тут) */   
+    }
+    .col4{
+        width: 100%; /*встанут друг под другом*/
+        margin: 0;/*СО ВСЕХ сторон отступы убрала*/
+        box-sizing: border-box;    /* Именно в колонке, не в контейнере это пишу! свойство по умолч= контент бокс по формуле выше, меняю на бордер бокс*/
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header-tile{
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px; /*try in browser*/
+    }
+    
+    .header_title{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .portfolio{
+    padding-top:40px;   
+    padding-bottom: 50px;}
+    
+    .title{
+    font-size: 36px;
+    }
+    
+    .footer{
+    padding-top: 70px;
+    padding-bottom: 60px;}
+    
+        
+}
